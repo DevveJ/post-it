@@ -1,11 +1,11 @@
 'use client'
 
-import { useMutation, useQueryClient } from 'react-query'
 import { useState } from 'react'
+import { useMutation, useQueryClient } from 'react-query'
 import toast from 'react-hot-toast'
 import axios, { AxiosError } from 'axios'
 
-export default async function CreatePost () {
+export default function CreatePost () {
   const [title, setTitle] = useState('')
   const [isDisabled, setIsDisabled] = useState(false)
   const queryClient = useQueryClient()
