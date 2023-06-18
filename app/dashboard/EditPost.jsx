@@ -45,17 +45,17 @@ export default function EditPost ({
         animate={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0.8 }}
         transition={{ ease: 'easeOut' }}
-        className='bg-white my-8 p-8 rounded-lg '
+        className='bg-white dark:bg-zinc-800 my-8 p-8 rounded-lg '
       >
         <div className='flex items-center gap-2'>
-          <Image width={32} height={32} src={avatar} alt='avatar' />
-          <h3 className='font-bold text-gray-700'>{name}</h3>
+          <Image width={32} height={32} src={avatar} alt='avatar' className='rounded-full' />
+          <h3 className='font-bold text-gray-700 dark:text-white'>{name}</h3>
         </div>
         <div className='my-8 '>
           <p className='break-all'>{title}</p>
         </div>
         <div className='flex items-center gap-4 '>
-          <p className=' text-sm font-bold text-gray-700'>
+          <p className=' text-sm font-bold text-zinc-500'>
             {comments?.length} Comments
           </p>
           <button

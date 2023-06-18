@@ -11,7 +11,9 @@ export default async function Dashboard () {
 
   return (
     <main>
-      <h1 className='text-2xl font-bold'>Welcome back {session?.user?.name}</h1>
+      <h2 className='text-2xl font-semibold'>
+        Welcome back <span className='font-bold text-teal-500'>{session?.user?.name}</span>
+      </h2>
       <MyPosts />
     </main>
   )
